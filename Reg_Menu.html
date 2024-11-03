@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-black-background-creative-gourmet-food-business-menu-background-material-image_147582.jpg');
+             background-size : cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            width: 350px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header img {
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header h2 {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .form-container {
+            padding: 30px;
+        }
+
+        .form-container .input-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-container .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-container .register-btn {
+            background-color: #004aad;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            position: relative;
+        }
+
+        .form-container .register-btn:hover {
+            background-color: #003b8b;
+        }
+
+        .form-container .register-btn::after {
+            content: '→';
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .form-container .login-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .form-container .login-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-container .login-text a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header section with food image -->
+    <div class="header">
+        
+        <h2>Create a Free Account</h2>
+    </div>
+
+    <!-- Form section -->
+    <div class="form-container">
+        <form action="insertMenu">
+        	<div class="input-group">
+                <label for="menu id">Your Menu Id</label>
+                <input type="number" name="menuId" placeholder="Enter your menu id" required>
+            </div>
+        	<div class="input-group">
+                <label for="restaurant id">Your Restaurant Id</label>
+                <input type="number" name="restaurantId" placeholder="Enter your restaurant id" required>
+            </div>
+        	<div class="input-group">
+                <label for="item name">Your item Name</label>
+                <input type="text" name="itemName" placeholder="Enter your item name" required>
+            </div>
+            <div class="input-group">
+                <label for="description">Your Description</label>
+                <input type="text" name="description" placeholder="Enter the description" required>
+            </div>
+            <div class="input-group">
+                <label for="price">Price</label>
+                <input type="number" name="price" placeholder="Enter the price" required>
+            </div>
+            <div class="input-group">
+                <label for="isavailable">Is Available</label>
+                <input type="text" name="isAvailable" placeholder="Enter is available" required>
+            </div>
+            <button type="submit" class="register-btn">Submit</button>
+            <div class="login-text">
+                <p>Already have an account? <a href="Login_Menu.html">Log in!</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
