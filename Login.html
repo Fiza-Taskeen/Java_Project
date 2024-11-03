@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.wallpapertip.com/wmimgs/54-549491_background-for-food-website.jpg');
+            background-size : cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            width: 350px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header img {
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header h2 {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .form-container {
+            padding: 30px;
+        }
+
+        .form-container .input-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-container .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-container .forgot-password {
+            text-align: right;
+            font-size: 14px;
+            color: #007bff;
+            margin-top: 5px;
+        }
+
+        .form-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .form-container .login-btn {
+            background-color: #004aad;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            position: relative;
+        }
+
+        .form-container .login-btn:hover {
+            background-color: #003b8b;
+        }
+
+        .form-container .login-btn::after {
+            content: '→';
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .form-container .signup-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .form-container .signup-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-container .signup-text a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header section with food image -->
+    <div class="header">
+        
+        <h2>Log In</h2>
+    </div>
+
+    <!-- Form section -->
+    <div class="form-container">
+        <form action="UserLoginServlet">
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input type="text" name="userEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Your Password</label>
+                <input type="password" name="userPassword" placeholder="Enter your password" required>
+            </div>
+   			 <a href="#">Forgot Password?</a>
+            <button type="submit" class="login-btn">Log in</button>
+            <div class="signup-text">
+                <p>Don't have an account? <a href="Register.html">Register!</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
